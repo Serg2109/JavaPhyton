@@ -1,0 +1,2 @@
+string_var = input("Enter a string: ")
+print("String entered:", string_var)
