@@ -1,0 +1,2 @@
+bool_var = input("Enter a boolean (True/False): ").lower() == 'true'
+print("Boolean entered:", bool_var)
