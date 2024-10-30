@@ -1,0 +1,2 @@
+char_var = input("Enter a character: ")[0]  # [0] to ensure only the first character is taken
+print("Character entered:", char_var)
