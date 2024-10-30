@@ -1,0 +1,2 @@
+float_var = float(input("Enter a floating-point number: "))
+print("Float entered:", float_var)
