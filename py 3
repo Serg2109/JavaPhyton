@@ -1,0 +1,2 @@
+integer_var = int(input("Enter an integer: "))
+print("Integer entered:", integer_var)
