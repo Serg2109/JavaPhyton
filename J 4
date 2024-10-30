@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a floating-point number: ");
+        float floatVar = scanner.nextFloat();
+        System.out.println("Float entered: " + floatVar);
+        scanner.close();
+    }
+}
