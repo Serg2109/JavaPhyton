@@ -1,0 +1,18 @@
+public class SalaryTax {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your income: ");
+        double income = scanner.nextDouble();
+        double tax;
+
+        if (income > 100000) {
+            tax = income * 0.30;
+        } else if (income >= 50000) {
+            tax = income * 0.20;
+        } else {
+            tax = income * 0.10;
+        }
+
+        System.out.println("Your tax is: $" + tax);
+    }
+}
