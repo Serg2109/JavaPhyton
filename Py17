@@ -1,0 +1,9 @@
+def salary_tax():
+    income = float(input("Enter your income: "))
+    if income > 100000:
+        tax = income * 0.30
+    elif income >= 50000:
+        tax = income * 0.20
+    else:
+        tax = income * 0.10
+    print(f"Your tax is: ${tax}")
