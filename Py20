@@ -1,0 +1,17 @@
+def phone_bill(minutes):
+    base_charge = 10
+    extra_fee = 0
+    additional_charge = 0
+
+    if minutes > 300:
+        additional_charge = 100 * 0 + 100 * 0.5 + 100 * 0.75 + (minutes - 300) * 1
+    elif minutes > 200:
+        additional_charge = 100 * 0 + 100 * 0.5 + (minutes - 200) * 0.75
+    elif minutes > 100:
+        additional_charge = 100 * 0 + (minutes - 100) * 0.5
+
+    if minutes > 250:
+        extra_fee = 5
+
+    total_bill = base_charge + additional_charge + extra_fee
+    return total_bill
