@@ -1,0 +1,15 @@
+public class BillCalculators {
+
+    public static double calculateElectricityBill(int units) {
+        double bill = 0;
+        if (units <= 100) {
+            bill = units * 1.0;
+        } else if (units <= 200) {
+            bill = 100 * 1.0 + (units - 100) * 1.5;
+        } else if (units <= 300) {
+            bill = 100 * 1.0 + 100 * 1.5 + (units - 200) * 2.0;
+        } else {
+            bill = 100 * 1.0 + 100 * 1.5 + 100 * 2.0 + (units - 300) * 3.0;
+        }
+        return bill;
+    }
