@@ -1,0 +1,3 @@
+string = "Hello"
+for char in string:
+    print(char)
