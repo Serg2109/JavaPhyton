@@ -1,0 +1,19 @@
+ public static double calculatePhoneBill(int minutes) {
+        double baseCharge = 10;
+        double extraFee = 0;
+        double additionalCharge = 0;
+
+        if (minutes > 300) {
+            additionalCharge = 100 * 0.0 + 100 * 0.5 + 100 * 0.75 + (minutes - 300) * 1.0;
+        } else if (minutes > 200) {
+            additionalCharge = 100 * 0.0 + 100 * 0.5 + (minutes - 200) * 0.75;
+        } else if (minutes > 100) {
+            additionalCharge = 100 * 0.0 + (minutes - 100) * 0.5;
+        }
+
+        if (minutes > 250) {
+            extraFee = 5;
+        }
+
+        return baseCharge + additionalCharge + extraFee;
+    }
